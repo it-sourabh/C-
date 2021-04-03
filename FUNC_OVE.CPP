@@ -1,0 +1,51 @@
+#include<iostream.h>
+#include<conio.h>
+class func
+{
+public:
+	void add(int& a, int& b)
+	{
+		cout << "Enter the value of the number 1: " << "\n";
+		cin >> a;
+		cout << "Enter the value of the number 2: " << "\n";
+		cin >> b;
+		cout << "The sum is: " << a+b << "\n";
+	}
+
+	void add(int& a, int& b, int& c)
+	{       cout << "Enter the value of the number 1: " << "\n";
+		cin >> a;
+		cout << "Enter the value of the number 2: " << "\n";
+		cin >> b;
+		cout << "Enter the value of the number 3: " << "\n";
+		cin >> c;
+		cout << "The sum of the three variables is: " << a+b+c << "\n";
+	}
+
+	int add(float& a, float& b)
+	{
+		cout << "Enter the value of the number 1: " << "\n";
+		cin >> a;
+		cout << "Enter the value of the number 2: " << "\n";
+		cin >> b;
+		cout << "The sum of floats is: " << a+b << "\n";
+		return 0;
+	}
+
+	void add(int& a)
+	{
+		cout << "Enter the value of the number: " << "\n";
+		cin >> a;
+		a = a+1;
+		cout << "After adding 1, the answer is: " << a << "\n";
+	}
+};
+void main()
+{
+int x,y,z;
+float m,n;
+func f;
+clrscr();
+f.add(m,n);
+getch();
+}
